@@ -1,4 +1,4 @@
-package com.taxesmad.test.items;
+package com.taxesmad.test;
 
 import java.math.BigDecimal;
 
@@ -23,15 +23,15 @@ import com.taxesmad.model.Item.ItemCategory;
 
 
 public enum Catalog {
-	BOOK(ItemCategory.book,"Book",new BigDecimal(12.49),false),
-	MUSIC_CD(ItemCategory.generic,"Music CD",new BigDecimal(14.99),false),
-	CHOCOLATE_BAR(ItemCategory.food,"Chocolate Bar",new BigDecimal(0.85),false),
-	CHOCOLATE_BOX_10_IMP(ItemCategory.food,"Imported Box of Chocolates",new BigDecimal(10.00),true),
-	PERFUME_4750_IMP(ItemCategory.generic,"Bottle of Perfume",new BigDecimal(47.50),true),
-	PERFUME_2799_IMP(ItemCategory.generic,"Bottle of Perfume",new BigDecimal(27.99),true),
-	PERFUME_1899(ItemCategory.generic,"Bottle of Perfume",new BigDecimal(18.99),false),
-	PACKET_HEADACHE_PILLS(ItemCategory.medical,"packet of headache pills",new BigDecimal(9.75),false),
-	CHOCOLATE_BOX_1125_IMP(ItemCategory.food,"Imported Box of Chocolates",new BigDecimal(11.25),true),
+	BOOK(ItemCategory.book,"Book",new BigDecimal("12.49"),false),
+	MUSIC_CD(ItemCategory.generic,"Music CD",new BigDecimal("14.99"),false),
+	CHOCOLATE_BAR(ItemCategory.food,"Chocolate Bar",new BigDecimal("0.85"),false),
+	CHOCOLATE_BOX_10_IMP(ItemCategory.food,"Box of Chocolates",new BigDecimal("10.00"),true),
+	PERFUME_4750_IMP(ItemCategory.generic,"Bottle of Perfume",new BigDecimal("47.50"),true),
+	PERFUME_2799_IMP(ItemCategory.generic,"Bottle of Perfume",new BigDecimal("27.99"),true),
+	PERFUME_1899(ItemCategory.generic,"Bottle of Perfume",new BigDecimal("18.99"),false),
+	PACKET_HEADACHE_PILLS(ItemCategory.medical,"Packet of Headache pills",new BigDecimal("9.75"),false),
+	CHOCOLATE_BOX_1125_IMP(ItemCategory.food,"Box of Chocolates",new BigDecimal("11.25"),true),
 	;
 	
 	private ItemCategory category;
