@@ -12,7 +12,7 @@ import com.taxesmad.util.TaxesEvaluator;
  *
  */
 public class CashierItem extends Item {
-	//When an item is created as default quantity is 1.
+	//When an item is created the default quantity is 1.
 	private int quantity = 1;
 	
 	/**

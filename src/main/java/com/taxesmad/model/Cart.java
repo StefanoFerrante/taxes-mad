@@ -53,7 +53,7 @@ public class Cart {
 	}
 
 	/**
-	 * Decrease the quantity of an item in the list for the
+	 * Decrease the quantity of an item in the list based on the
 	 * specified quantity of the item in input.
 	 * 
 	 * @param item
@@ -63,7 +63,7 @@ public class Cart {
 	}
 	
 	/**
-	 * Increase the quantity of an item in the list.
+	 * Increase the quantity of an item in the list based on the specified quantity of the item in input.
 	 * 
 	 * @param item
 	 */
