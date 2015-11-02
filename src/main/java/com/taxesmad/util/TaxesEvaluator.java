@@ -4,10 +4,7 @@ import java.math.BigDecimal;
 
 import com.taxesmad.model.Item.ItemCategory;
 /**
- * Basic sales tax is applicable at a rate of 10% 
- * on all goods, except books, food, and medical products that are exempt. 
- * Import duty is an additional sales tax applicable on all imported goods 
- * at a rate of 5%, with no exemptions.
+ * The class contains 2 static methods to evaluate the taxes based on the attributes in input.
  * 
  * @author Stefano Ferrante
  *
@@ -16,14 +13,26 @@ public class TaxesEvaluator {
 	private static final BigDecimal ROUND_RULE = new BigDecimal("0.05"); 
 	private static final BigDecimal TAX_IMPORTED = new BigDecimal("5");
 	
-	
-	
-	
-	
+	/**
+	 * Based on the attributes passed in input return the price + taxes.
+	 * 	
+	 * @param category
+	 * @param price
+	 * @param imported
+	 * @return the price with the taxes added.
+	 */
 	public static BigDecimal priceWithTaxes(ItemCategory category,BigDecimal price,boolean imported){
 		return salesTaxes(category,price,imported).add(price);
 	}
 	
+	/**
+	 * Based on the attributes passed in input return the taxes to be applied.
+	 * 	
+	 * @param category
+	 * @param price
+	 * @param imported
+	 * @return the price with the taxes added.
+	 */
 	public static BigDecimal salesTaxes(ItemCategory category,BigDecimal price,boolean imported){
 		BigDecimal baseTaxPercentage=null;
 		switch (category) {

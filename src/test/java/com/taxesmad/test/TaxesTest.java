@@ -1,6 +1,5 @@
 package com.taxesmad.test;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Assert;
@@ -8,9 +7,12 @@ import org.junit.Test;
 
 import com.taxesmad.model.Cart;
 import com.taxesmad.model.CashierItem;
+import com.taxesmad.util.Catalog;
 
 public class TaxesTest {
-
+	/**
+	 * Test case calculating the taxes for a local Book
+	 */
 	@Test
 	public void bookTaxesTest() {
 		Cart cart = new Cart();
@@ -22,7 +24,10 @@ public class TaxesTest {
 		Assert.assertEquals(Catalog.BOOK.getPrice().doubleValue(), item
 				.getPrice().doubleValue(), 0);
 	}
-
+	
+	/**
+	 * Test case calculating the taxes for an imported Food
+	 */
 	@Test
 	public void importedFoodTaxesTest() {
 		Cart cart = new Cart();
@@ -36,7 +41,10 @@ public class TaxesTest {
 				+ item.getPrice().doubleValue());
 		Assert.assertEquals(10.50, item.getPrice().doubleValue(), 0);
 	}
-
+	
+	/**
+	 * Test case calculating the taxes for a local Food
+	 */
 	@Test
 	public void localFoodTaxesTest() {
 		Cart cart = new Cart();
@@ -51,6 +59,9 @@ public class TaxesTest {
 				item.getPrice().doubleValue(), 0);
 	}
 
+	/**
+	 * Test case calculating the taxes for a local Medical
+	 */
 	@Test
 	public void medicalTaxesTest() {
 		Cart cart = new Cart();
@@ -66,7 +77,9 @@ public class TaxesTest {
 				item.getPrice().doubleValue(), 0);
 	}
 	
-	
+	/**
+	 * Test case calculating the taxes for a local Generic
+	 */
 	@Test
 	public void localGeneric1499TaxesTest() {
 		Cart cart = new Cart();
@@ -80,6 +93,9 @@ public class TaxesTest {
 		Assert.assertEquals(16.49,item.getPrice().doubleValue(), 0);
 	}
 	
+	/**
+	 * Test case calculating the taxes for a local Generic
+	 */
 	@Test
 	public void localGenericTaxesTest() {
 		Cart cart = new Cart();
@@ -93,6 +109,9 @@ public class TaxesTest {
 		Assert.assertEquals(20.89,item.getPrice().doubleValue(), 0);
 	}
 	
+	/**
+	 * Test case calculating the taxes for a imported Generic
+	 */
 	@Test
 	public void importedGenericTaxesTest() {
 		Cart cart = new Cart();
@@ -106,6 +125,9 @@ public class TaxesTest {
 		Assert.assertEquals(54.65,item.getPrice().doubleValue(), 0);
 	}
 	
+	/**
+	 * Test case calculating the taxes for a imported Generic
+	 */
 	@Test
 	public void importedGeneric2799TaxesTest() {
 		Cart cart = new Cart();
@@ -119,6 +141,9 @@ public class TaxesTest {
 		Assert.assertEquals(32.19,item.getPrice().doubleValue(), 0);
 	}
 	
+	/**
+	 * Test case calculating the taxes for a imported Food
+	 */
 	@Test
 	public void importedFood1125TaxesTest() {
 		Cart cart = new Cart();
@@ -132,7 +157,9 @@ public class TaxesTest {
 		Assert.assertEquals(11.85,item.getPrice().doubleValue(), 0);
 	}
 	
-	
+	/**
+	 * Test case calculating the taxes for a imported Food
+	 */
 	@Test
 	public void imported2Food1125TaxesTest() {
 		Cart cart = new Cart();
@@ -145,7 +172,7 @@ public class TaxesTest {
 		item.increase(1);
 		System.out.println("Item price CHOCOLATE BOX:" + item.getPrice().doubleValue());
 		Assert.assertEquals(23.70,item.getPrice().doubleValue(), 0);
-		System.out.println("Recepit"+item.prettyRecepit());
+		System.out.println("Recepit"+item.prettyReceipt());
 	}
 	
 	

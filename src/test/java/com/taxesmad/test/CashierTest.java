@@ -7,11 +7,13 @@ import org.junit.Test;
 import com.taxesmad.model.Cart;
 import com.taxesmad.model.CashierItem;
 import com.taxesmad.start.Cashier;
+import com.taxesmad.util.Catalog;
 
 public class CashierTest {
 	
 	Cashier cashier = new Cashier();
 	/**
+	 * Test of the receipt printed for the test case with the following items:
 	 * 1 book at 12.49
 	 * 1 music CD at 14.99
      * 1 chocolate bar at 0.85
@@ -35,6 +37,7 @@ public class CashierTest {
 	}
 	
 	/**
+	 * Test of the receipt printed for the test case with the following items:
 	 * 1 imported box of chocolates at 10.00
 	 * 1 imported bottle of perfume at 47.50
 	 */
@@ -53,6 +56,7 @@ public class CashierTest {
 	}
 	
 	/**
+	 * Test of the receipt printed for the test case with the following items:
 	 * 1 imported bottle of perfume at 27.99
 	 * 1 bottle of perfume at 18.99
 	 * 1 packet of headache pills at 9.75

@@ -94,15 +94,34 @@ public class Cart {
 						itemToBeRemoved = item;
 					break;
 				}
+				break;
 			}
-			break;
+			
 		}
 		if(itemToBeRemoved!= null)
 			items.remove(itemToBeRemoved);
 	}
 	
+	/**
+	 * Return the list of items contained in the cart
+	 * @return
+	 */
 	public List<CashierItem> getCartContent(){
 		return items;
 	}
+	
+	/**
+	 * Count the items in the list, reading the quantity value for each item.
+	 * @return
+	 */
+	public int itemsContained(){
+		int total=0;
+		for(CashierItem item : items) {
+			total+= item.getQuantity();
+		}
+		return total;
+	}
+	
+	
 
 }

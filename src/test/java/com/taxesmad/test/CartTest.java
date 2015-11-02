@@ -9,9 +9,13 @@ import org.junit.Test;
 
 import com.taxesmad.model.Cart;
 import com.taxesmad.model.CashierItem;
+import com.taxesmad.util.Catalog;
 
 public class CartTest {
 
+	/**
+	 * Simple test to add an item to the cart
+	 */
 	@Test
 	public void addItemTest() {
 		Cart cart = new Cart();
@@ -21,6 +25,10 @@ public class CartTest {
 		assertFalse(cart.isEmpty());
 	}
 	
+	
+	/**
+	 * Testing the correct behavior if the same item is added multiple times 
+	 */
 	@Test
 	public void addItemDuplicatedAndQuantityIncreased() {
 		Cart cart = new Cart();
@@ -35,6 +43,9 @@ public class CartTest {
 	}
 	
 	
+	/**
+	 * testing remove and decrease functionality of the Cart object
+	 */
 	@Test
 	public void removeAndDecrease() {
 		Cart cart = new Cart();

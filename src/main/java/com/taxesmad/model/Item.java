@@ -1,7 +1,13 @@
 package com.taxesmad.model;
 
 import java.math.BigDecimal;
-
+/**
+ * Base class to represent an item in the test
+ * Evaluating all the attributes of the object make it unique in a Cart.
+ * 
+ * @author Stefano Ferrante
+ *
+ */
 public class Item {
 	 public enum  ItemCategory {food,book,medical,generic};
 	 
