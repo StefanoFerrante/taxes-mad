@@ -2,9 +2,9 @@
 Evaluation of the taxes to be paid for a set of pre-configured items based on the following rules:
  1. Basic sales tax is applicable at a rate of 10% on all goods, except books, food, and medical products that are exempt.
  2. Import duty is an additional sales tax applicable on all imported goods at a rate of 5%, with no exemptions.
- 3 .The rounding rules for sales tax are that for a tax rate of n%, a shelf price of p contains (np/100 rounded up to the nearest 0.05) amount of sales tax.
+ 3. The rounding rules for sales tax are that for a tax rate of n%, a shelf price of p contains (np/100 rounded up to the nearest 0.05) amount of sales tax.
 
-The application allow to collect in a Cart a list of items.
+The application allows to collect in a Cart a list of items.
 There are 3 pre-configured test cases and the option to create freely a cart.
 
 
