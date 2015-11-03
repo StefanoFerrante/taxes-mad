@@ -3,18 +3,18 @@ package com.taxesmad.model;
 import java.math.BigDecimal;
 /**
  * Base class to represent an item in the test
- * Evaluating all the attributes of the object make it unique in a Cart.
+ * Evaluating all the attributes  of the object make it unique in a Cart.
  * 
  * @author Stefano Ferrante
  *
  */
 public class Item {
-	 public enum  ItemCategory {food,book,medical,generic};
+	 public enum ItemCategory {food,book,medical,generic};
 	 
-	 private boolean imported;
+	 private boolean imported; 
 	 private ItemCategory category;
 	 private String label;
-	 private BigDecimal price;
+	 private BigDecimal price; 
 	 /**
 	  * Configure an item 
 	  * @param cat
@@ -37,7 +37,7 @@ public class Item {
 	/**
 	 * @return the imp
 	 */
-	public boolean isImported() {
+	public boolean isImported()  {
 		return imported;
 	}
 

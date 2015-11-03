@@ -18,7 +18,7 @@ public class CashierItem extends Item {
 	/**
 	 * 
 	 * @param cat Category of the item
-	 * @param label Label describing the item
+	 * @param label Label describing the item 
 	 * @param price Price of the item
 	 * @param imp flag defining if the item is imported or not.
 	 */

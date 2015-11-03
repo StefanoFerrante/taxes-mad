@@ -214,9 +214,9 @@ public class MarketTest {
 	}
 	
 	/**
-	 * Pre-configured test for specific list of items
+	 * Pre-configured test for specific list of items 
 	 * 
-	 * @return the Cart with specific items for this test.
+	 * @return the Cart with specific items  for this test.
 	 */
 	private static Cart fillCartforTest3Cart() {
 		Cart cart = new Cart();

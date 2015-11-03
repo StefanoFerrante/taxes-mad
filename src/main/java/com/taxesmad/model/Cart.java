@@ -5,17 +5,17 @@ import java.util.List;
 
 /**
  * Simple representation of a Cart containing 
- * a List of items to be bought
+ * a List of items to be bought 
  *  
  * @author Stefano Ferrante
  * 
  */
-public class Cart {
-	private List<CashierItem> items;
+public class Cart  {
+	private List<CashierItem>  items;
 	
 	//Operation used to update the cart items
 	private enum Operations {
-		increase, decrease
+		increase, decrease 
 	};
 	
 	public Cart() {
@@ -48,7 +48,7 @@ public class Cart {
 	 * despite of the quantity specified in the item in input.
 	 * @param item
 	 */
-	public void remove(CashierItem item) {
+	public void remove(CashierItem item) { 
 		items.remove(item);
 	}
 

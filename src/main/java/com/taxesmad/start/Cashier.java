@@ -15,10 +15,10 @@ import com.taxesmad.model.CashierItem;
 public class Cashier {
 	/**
 	 * Receive in input a Cart with the items the user want to buy, and return a String
-	 * representing the receipt.
+	 * representing the receipt. 
 	 * 
 	 * @param cart
-	 * @return the receipt for the cart
+	 * @return the receipt for the cart 
 	 */
 	public String checkout(Cart cart){
 		BigDecimal taxesTotal = new BigDecimal("0.00");
